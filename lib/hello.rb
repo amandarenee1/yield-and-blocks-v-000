@@ -1,7 +1,11 @@
-names = ["Tim", "Tom", "Jim"]
+def hello_t(array)
+  i = 0
 
-def hello_t(names)
-  puts names
+  while i < array.length
+    yield(array[i])
+    i = i + 1
+  end
+
+  array
 end
-
 # call your method here!
